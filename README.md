@@ -12,7 +12,7 @@ First, ensure you have MongoDB installed and running. You can start a local inst
 mongod --dbpath /path/to/db
 ```
 
-Next, open a `mongosh` shell and create the database and collections:
+Next, open a `mongosh` shell and create the database and collections(you can use these commands):
 
 ```
 use chatdb
@@ -72,11 +72,9 @@ Replace MONGO_URI with your MongoDB connection string.
 
 ### 3. Installing Dependencies
 
-Create a virtual environment and install dependencies:
+Create a virtual environment(if you want) and install dependencies:
 
 ```sh
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -85,7 +83,7 @@ pip install -r requirements.txt
 Start the FastAPI server:
 
 ```sh
-uvicorn app:app --reload
+uvicorn src.app:app --reload
 ```
 
 The API documentation will be available at:
